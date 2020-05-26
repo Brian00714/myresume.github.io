@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume</title>
+		<link rel="stylesheet" type="text/css" href="css/css.css">
+		<script>
+		function showhide(id)
+		{
+		var div = document.getElementById(id);
+		if (div.style.display !== "none") {
+		div.style.display = "none";
+		}
+		else {
+		div.style.display = "block";
+		}
+		}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class=L1>
+			<div><img  src="pic/1234.png"></div>
+				<img class=me src="pic/me2.jpg">
+			</div>
+			<div class=R1>
+				<h3>個人簡介</h3><br>
+				<p>姓名:葉力嘉</p>
+				<p>學校:中原大學資管系</p>
+				<p>生日:2000/07/14</p>
+				<p>email:brian00714@gmail.com</p>
+			</div>
+			<div class=RR>
+				<p>FB:<a href="https://www.facebook.com/profile.php?id=100002605510830" target="_blank" title="fb" ><img id="fb" src="pic/fb.png" ></a></p>
+				<p>IG:<a href="https://www.instagram.com/brian00714/" target="_blank" title="ig" ><img id="fb" src="pic/ig.webp" ></a></p>
+				<button class="button" style="vertical-align:middle"><a  class=button1 href="https://brian00714.github.io/index.html" style="color: white;"><span>個人網頁</span></a></button>
+			</div>
+		</header>
+		<div class="content">
+			<div class="L">
+				<div class="skillbar">
+					<h1>Skill Set</h1>
+					
+					<div class="bar Java" data-skill="Java"> 60%</div>
+					<div class="bar Python" data-skill="Python"> 75%</div>
+					<div class="bar CSharp" data-skill="C#"> 75%</div>
+					<div class="bar CSS3" data-skill="CSS3"> 80%</div>
+					<div class="bar HTML5" data-skill="HTML5"> 90%</div>
+				</div><br>
+				<div>
+					<h1>課程專案</h1>
+					<div class="course">
+						<img src="pic/coffee1.png" onclick="showhide('newpost1')" /><span class="T">大一企業概論  |  黑孩子咖啡</span>...<button onclick="showhide('newpost1')">點擊圖片</button>
+					</div>
+					<div id="newpost1" style="display:none">
+						<p>這間咖啡店的歷史，是一個能讓社會邊緣孩子們能自立的故事，後來我還進行了幾次的定額捐款，贊助這一件很有愛的故事店家。透過了大一的這次專案也讓我學習到非常多。</p>
+					</div>
+					<div class="course">
+						<img src="pic/pic1.png" onclick="showhide('newpost2')" /><span class="T">大二多媒體  |  期中專案</span>...<button onclick="showhide('newpost2')">點擊圖片</button>
+					</div>
+					<div id="newpost2" style="display:none">
+						<p>多媒體期中專題是由一組4位成員進行分工的網頁設計，內容是要介紹中原大學，不止是網頁設計，也要拍攝影片來介紹中原大學的優點，過程非常不容易。
+						</p>
+					</div>
+					<div class="course">
+						<img src="pic/pic2.png" onclick="showhide('newpost3')" /><span class="T">大二多媒體  |  個人網頁</span>...<button onclick="showhide('newpost3')">點擊圖片</button>
+					</div>
+					<div id="newpost3" style="display:none">
+						<p> 這是我第一次獨力完成一個網站，過程也是相當不容易，找了非常多相關資料，我也努力的想讓網頁更加好看，但我天生的美感可能不好，這點也讓我煞費苦心。</p>
+					</div>
+				</div>
+			</div>
+			<div class="R">
+				<h1>Work Experience</h1>
+				<div class=Rimg><p><img class=img1 src="pic/images.png">&nbsp;&nbsp;&nbsp;喜迎旅店房務員</p><br><br><br></div>
+				<div class=Rimg2><p><img class=img1 src="pic/KCA.png">&nbsp;&nbsp;&nbsp;岡大會暑期活動工作人員</p></div><br><br>
+				<div>
+					<h1>社團經歷</h1>
+					<p class=p1>岡山高中排球隊</p>
+					<div class="flip-box">
+						<div class="flip-box-inner">
+							<div class="flip-box-front">
+								<img src="pic/368898B.jpg" alt="Volleyball" style="width:660px;height: 330px ">
+							</div>
+							<div class="flip-box-back">
+								<h2>岡中男排</h2>
+								<p>KSSH Volleyball Team 2016/11/17</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<p class=p1>中原大學資管男排</p>
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<img src="pic/1_16x9.jpg" alt="Volleyball" style="width:660px;height: 330px ">
+						</div>
+						<div class="flip-box-back">
+							<h2>中原大學資管男排</h2>
+							<p>CYIM Volleyball Team</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div>&copy; 2020 BY Brian Yeh</div>
+	</footer>
+</body>
+</html>
